@@ -18,6 +18,10 @@ $(document).ready(function() {
       formula.push(userInput)
     }
 
+    if (formula.length === 1 && operators.includes(formula[0])) {
+      formula.length = 0
+    }
+
     formulaString = formula.join('')
 
     $('textarea').val(formulaString)

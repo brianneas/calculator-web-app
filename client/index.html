@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="calculate.js"></script>
+    <style media="screen" type="text/css">
+      .equal {
+        font-size: 20px;
+        width: 100px;
+      }
+      .operations {
+        font-size: 20px;
+        width: 50px;
+      }
+      textarea {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea name="textarea" rows="2" cols="50">Start calculating!</textarea>
+    <div>
+      <button type="button" class="operations number" value="1">1</button>
+      <button type="button" class="operations number" value="2">2</button>
+      <button type="button" class="operations number" value="3">3</button>
+    </div>
+    <div>
+      <button type="button" class="operations number" value="4">4</button>
+      <button type="button" class="operations number" value="5">5</button>
+      <button type="button" class="operations number" value="6">6</button>
+    </div>
+    <div>
+      <button type="button" class="operations number" value="7">7</button>
+      <button type="button" class="operations number" value="8">8</button>
+      <button type="button" class="operations number" value="9">9</button>
+    </div>
+    <div>
+      <button type="button" class="operations operator" value="+">+</button>
+      <button type="button" class="operations operator" value="-">-</button>
+      <button type="button" class="operations operator" value="*">*</button>
+      <button type="button" class="operations operator" value="/">/</button>
+    </div>
+    <div>
+      <button type="button" class="equal" id="equals">=</button>
+    </div>
+    <div>
+      <button type="button" class="equal" id="clear">C</button>
+    </div>
+  </body>
+</html>

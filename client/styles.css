@@ -1,0 +1,52 @@
+body {
+  margin-top: 50px;
+}
+
+textarea {
+  font-size: 40px;
+  border: none;
+  width: 340px;
+  background-color: #000000;
+  color: white;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.long {
+  width: 168px;
+}
+
+.number {
+  background-color: #6D6459;
+}
+
+.operator {
+  background-color: #ED8B0C;
+}
+
+.misc {
+  background-color: #E7E7E7; color: black;;
+  color: #000000;
+}
+
+.calculator {
+  width: 350px;
+  margin: auto;
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 40px;
+}

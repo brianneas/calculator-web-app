@@ -41,12 +41,9 @@ $(document).ready(function() {
 
 function createSolution(formula) {
   const solution = calculate(formula, operators)
-
-  printSolution(formula.join(''), solution)
-}
-
-function printSolution(formulaString, solution) {
-  $('textarea').val(formulaString + '\n=' + solution)
+  $('textarea').val(formula.join('') + '\n=' + solution)
+  formula.length = 0
+  formula.push(solution)
 }
 
 /*

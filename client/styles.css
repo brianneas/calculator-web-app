@@ -50,3 +50,8 @@ button {
   padding: 30px;
   border-radius: 40px;
 }
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}

@@ -61,9 +61,12 @@ $(document).ready(function() {
 function createSolution(formula) {
   console.log(formula)
   const solution = calculate(formula, operators)
-  $('textarea').val(formula.join('') + '\n=' + solution)
-  formula.length = 0
-  formula.push(solution)
+
+  printSolution(formula.join(''), solution)
+}
+
+function printSolution(formulaString, solution) {
+  $('textarea').val(formulaString + '\n=' + solution)
 }
 
 function pushParsedNumber() {

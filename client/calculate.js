@@ -12,9 +12,9 @@ function parseFormula(formula) {
       currentNumber.push(element)
     } else if (index === array.length - 1) {
       currentNumber.push(element)
-      parsedFormula.push(parseInt(currentNumber.join('')))
+      parsedFormula.push(parseFloat(currentNumber.join('')))
     } else {
-      parsedFormula.push(parseInt(currentNumber.join('')))
+      parsedFormula.push(parseFloat(currentNumber.join('')))
       currentNumber.length = 0
       parsedFormula.push(element)
     }

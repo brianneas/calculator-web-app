@@ -83,29 +83,3 @@ const formula = '9*9*9-1*9-60/80-2/5'.split('')
 console.log(calculate(formula, operators))
 console.log(calculate(eval(formula)))
 */
-
-
-//export { calculate }
-
-/*
-----Trying to use indexes:----
-
-const indexOfOperators = [0]
-
-formula.forEach((element, index) => {
-  if (operators.includes(element)) {
-    indexOfOperators.push(index)
-  }
-})
-
-indexOfOperators.push(formula.length - 1)
-
-console.log(indexOfOperators)
-
-indexOfOperators.forEach((element, index, array) => {
-  console.log(element, array[index + 1])
-  const numberArray = formula.slice(element, array[index + 1])
-  const number = parseInt(numberArray.join(''))
-  console.log(number)
-})
-*/
